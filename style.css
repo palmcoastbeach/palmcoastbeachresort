@@ -1,0 +1,180 @@
+/* style.css */
+
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: "Fredoka", sans-serif;
+}
+
+/* Fixed header style */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color:white;
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.1);
+  padding: 6px 6px;
+}
+
+.logo {
+  margin-left: 4%;
+  padding: 3px;
+  border-radius: 40px;
+ 
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlinks ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks ul li {
+  margin: 0 10px;
+}
+
+.navlinks ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlinks ul li a:hover {
+  color: brown;
+}
+
+.primary-btn {
+  background-color:  rgb(43, 187, 43);
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.primary-btn:hover {
+  background-color: rgb(148, 202, 22);
+}
+
+.navlinks ul li a i {
+  font-size: 32px; /* Makes the icon bigger */
+  text-decoration: none;
+  color: black;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Fredoka", sans-serif;
+  border-radius: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 20px;
+  margin-left: 16px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+}
+
+/* First Section with Background Image */
+#background-section {
+  height: 100vh; /* Full viewport height */
+  background-image: url('b\ \(1\).jpeg'); /* Your background image */
+  background-size: cover; /* Cover to fill the section */
+  background-position: center; /* Center the image */
+  margin-top: 50px; /* Space for the fixed header */
+}
+
+/* Second Section with content */
+section {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 5%;
+  margin-top: 20px;
+  
+}
+
+.main-image {
+  width: fit-content;
+  height: 500px;
+  border-radius: 30px;
+ 
+}
+
+.short-description h2 {
+  font-size: 50px;
+  margin-bottom: -10px;
+  align-items: center;
+  margin-left: 180px;
+  margin-top: 12px;
+}
+
+.short-description p {
+  margin-bottom: -5px;
+  font-size: 25px;
+  margin-left: 50px;
+  text-align: justify;
+}
+
+.bottom-images {
+  display: flex;
+  margin-left: 41%;
+  margin-top: -230px;
+}
+
+.bottom-image {
+  width: 230px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 10px;
+}
